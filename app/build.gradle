@@ -5,18 +5,18 @@ plugins {
 
 android {
     signingConfigs {
-        debug {
-            storeFile file('../onetap-keystore')
-            storePassword 'onetap'
-            keyAlias 'onetap-key'
-            keyPassword 'onetap'
-        }
 //        debug {
-//            storeFile file("../release-key.jks")
-//            storePassword "password"
-//            keyAlias "avtestharness"
-//            keyPassword "password"
+//            storeFile file('../onetap-keystore')
+//            storePassword 'onetap'
+//            keyAlias 'onetap-key'
+//            keyPassword 'onetap'
 //        }
+        debug {
+            storeFile file("../release-key.jks")
+            storePassword "password"
+            keyAlias "avtestharness"
+            keyPassword "password"
+        }
     }
     namespace 'uk.co.bbc.onetapapp'
     compileSdk 33
